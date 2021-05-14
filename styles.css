@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "product_sansregular";
+  src: url("/tipografias/product_sans_regular-webfont.woff2") format("woff2"),
+    url("/tipografias/product_sans_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -6;
+}
+
+body {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
+  /* flex-direction: column;
+ */
+  grid-template-rows: repeat(3, 1fr);
+}
+
+body.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+a {
+  color: #292929;
+  display: inline-block;
+  /* width: 6em;
+  height: 2em; */
+  background-color: #ffbc0d;
+  text-decoration: none;
+  font-family: product_sansregular, sans-serif;
+  font-size: 2rem;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  padding: 0.5em;
+  border-radius: 0.25em;
+}
+
+a:hover {
+  background-color: #ecad0d;
+}
+
+p {
+  color: #292929;
+  display: inline-block;
+  /* width: 6em;
+  height: 2em; */
+  background-color: #ffbc0d;
+  text-decoration: none;
+  font-family: product_sansregular, sans-serif;
+  font-size: 2rem;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  padding: 0.5em;
+  border-radius: 0.25em;
+  /* margin-bottom: 3rem; */
+}
+
+img {
+  display: block;
+  width: 30rem;
+  /* margin: 6rem; */
+}
