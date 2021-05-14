@@ -72,11 +72,22 @@ p {
   align-items: center; */
   padding: 0.5em;
   border-radius: 0.25em;
-  /* margin-bottom: 3rem; */
+}
+
+p,
+div {
+  margin: 0 2rem;
 }
 
 img {
   display: block;
   width: 30rem;
+  max-width: 100%;
   /* margin: 6rem; */
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 10px;
+  }
 }
